@@ -93,7 +93,7 @@ public interface Mapper {
      * @param object объект для сохранения
      * @return строковое представление объекта в выбранном формате
      */
-    String writeToString(Object object);
+    String writeToString(Object object) throws IllegalAccessException;
     /**
      * Сохраняет {@code object} в {@link OutputStream}.
      * <p>
